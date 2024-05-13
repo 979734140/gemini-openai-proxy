@@ -1,8 +1,9 @@
 // node_modules/.deno/@hono+node-server@1.11.0/node_modules/@hono/node-server/dist/index.mjs
-import { createServer as createServerHTTP } from "http";
-import { Http2ServerRequest } from "http2";
-import { Readable } from "stream";
+import {createServer as createServerHTTP} from "http";
+import {Http2ServerRequest} from "http2";
+import {Readable} from "stream";
 import crypto2 from "crypto";
+
 var RequestError = class extends Error {
   static name = "RequestError";
   constructor(message, options) {
