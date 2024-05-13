@@ -1,9 +1,9 @@
-import { type IRequest, type IttyRouterType, Router, cors, error, json } from "itty-router"
-import { geminiProxy } from "./gemini-proxy.ts"
-import { hello } from "./hello.ts"
-import { Logger } from "./log.ts"
-import { chatProxyHandler } from "./openai/chat/completions/ChatProxyHandler.ts"
-import { modelDetail, models } from "./openai/models.ts"
+import {cors, error, type IRequest, type IttyRouterType, json, Router} from "https://esm.sh/itty-router"
+import {geminiProxy} from "./gemini-proxy.ts"
+import {hello} from "./hello.ts"
+import {Logger} from "./log.ts"
+import {chatProxyHandler} from "./openai/chat/completions/ChatProxyHandler.ts"
+import {modelDetail, models} from "./openai/models.ts"
 
 const { preflight, corsify } = cors({ allowHeaders: "*" })
 

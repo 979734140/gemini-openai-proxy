@@ -567,4 +567,4 @@ app.post(":model_version/models/:model_and_action", geminiProxy);
 app.all("*", () => new Response("Page Not Found", { status: 404 }));
 
 // main_deno.ts
-Deno.serve({ port: 8e3 }, app.fetch);
+Deno.serve({ port: 8001 }, app.fetch);
